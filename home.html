@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechEase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-top">
+      <a href="home.html" class="site-logo">
+        Tech<span>Ease</span>
+      </a>
+
+      <div class="text-controls">
+        <span>Text size:</span>
+        <button type="button" id="decrease-text" aria-label="Decrease text size">A−</button>
+        <button type="button" id="increase-text" aria-label="Increase text size">A+</button>
+      </div>
+    </div>
+
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a href="home.html" aria-current="page">Home</a>
+      <a href="subtopic1.html">Smartphone Basics</a>
+      <a href="subtopic2.html">Online Services</a>
+      <a href="subtopic3.html">Stay Safe Online</a>
+      <a href="planning-design.html">Planning &amp; Design</a>
+      <a href="reflection-ai-report.html">Reflection &amp; AI</a>
+      <a href="overview.html">Overview</a>
+    </nav>
+  </div>
+
+  <div class="header-line"></div>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <p class="hero-badge">Free help for seniors in Bahrain</p>
+
+        <h1 class="hero-title">
+          Technology made<br>
+          <span>easy</span>, at your own pace
+        </h1>
+
+        <p class="hero-description">
+          Simple, step-by-step guides that help older adults use
+          smartphones, online services and the internet
+          <strong>safely and confidently.</strong>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#register" class="action-button primary-button">
+            Register for free →
+          </a>
+          <a href="#learning" class="action-button secondary-button">
+            Start learning
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img
+          src="image/senior-phone.png"
+          alt="An older adult using a smartphone"
+          class="hero-photo"
+          width="330"
+          height="330"
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome-section">
+    <div class="container narrow-container section-spacing">
+      <h2 class="content-title">Welcome to TechEase</h2>
+      <div class="cyan-underline"></div>
+
+      <p class="intro-text">
+        Everyday technology should be easy for everyone.
+        TechEase is an educational website that helps older
+        adults in Bahrain build their digital skills.
+      </p>
+
+      <p class="intro-text">
+        Our goal is to make everyday tasks feel simpler, from
+        sending a message to recognising an online scam.
+        Explore clear guides and practise with safe simulations
+        that let you learn without worrying about mistakes.
+      </p>
+    </div>
+  </section>
+
+  <section class="learning-section" id="learning">
+    <div class="container section-spacing">
+      <h2 class="content-title">What would you like to learn?</h2>
+      <div class="cyan-underline"></div>
+
+      <div class="learning-grid">
+        <article class="learning-card">
+          <div class="card-top-line"></div>
+          <div class="round-icon smartphone-icon" aria-hidden="true">
+            <span></span>
+          </div>
+          <h3>Smartphone Basics</h3>
+          <p class="body-copy">
+            Get familiar with your phone. Learn to make calls,
+            send messages, and adjust useful settings.
+          </p>
+          <a class="text-link" href="subtopic1.html">
+            Explore smartphone basics →
+          </a>
+        </article>
+
+        <article class="learning-card">
+          <div class="card-top-line"></div>
+          <div class="round-icon services-icon" aria-hidden="true">
+            <span></span>
+          </div>
+          <h3>Online Services</h3>
+          <p class="body-copy">
+            Learn how to browse websites, find useful information,
+            and understand common online forms.
+          </p>
+          <a class="text-link" href="subtopic2.html">
+            Explore online services →
+          </a>
+        </article>
+
+        <article class="learning-card">
+          <div class="card-top-line"></div>
+          <div class="round-icon safety-icon" aria-hidden="true">
+            <span></span>
+          </div>
+          <h3>Stay Safe Online</h3>
+          <p class="body-copy">
+            Learn to recognise suspicious messages, protect
+            personal information, and create stronger passwords.
+          </p>
+          <a class="text-link" href="subtopic3.html">
+            Explore online safety →
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="resources-section">
+    <div class="container section-spacing">
+      <h2 class="content-title">Learn and practise</h2>
+      <div class="cyan-underline"></div>
+
+      <div class="resources-grid">
+        <article class="resource-card">
+          <div class="resource-banner" aria-hidden="true">📱</div>
+          <div class="resource-content">
+            <h3>Practise using a smartphone</h3>
+            <p class="body-copy">
+              Follow guided steps in a pretend phone.
+              Take your time and try again whenever you need.
+            </p>
+            <a href="subtopic1.html" class="text-link">
+              Go to smartphone practice →
+            </a>
+          </div>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-banner" aria-hidden="true">🛡️</div>
+          <div class="resource-content">
+            <h3>Build safer online habits</h3>
+            <p class="body-copy">
+              Discover what to check before opening a link
+              or sharing your personal details.
+            </p>
+            <a href="subtopic3.html" class="text-link">
+              Read safety tips →
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-section">
+    <div class="container steps-layout">
+      <div class="learning-message">
+        <span aria-hidden="true">✓</span>
+        <h2>Small steps. More confidence.</h2>
+        <p>Repeat any lesson and learn at a pace that suits you.</p>
+      </div>
+
+      <div class="steps-content">
+        <h2 class="content-title align-left">How it works</h2>
+        <div class="cyan-underline left"></div>
+
+        <div class="step-row">
+          <span class="step-number">1</span>
+          <div>
+            <h3>Choose a topic</h3>
+            <p class="body-copy">Pick a skill you want to learn.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <span class="step-number">2</span>
+          <div>
+            <h3>Follow the guide</h3>
+            <p class="body-copy">Read the simple instructions.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <span class="step-number">3</span>
+          <div>
+            <h3>Practise safely</h3>
+            <p class="body-copy">
+              Try the activities and repeat when needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register">
+    <div class="container narrow-container section-spacing">
+      <h2 class="content-title">Start your learning journey</h2>
+      <div class="cyan-underline"></div>
+
+      <p class="intro-text">
+        Try our registration form. This demo checks your details
+        without saving them or creating an account.
+      </p>
+
+      <form id="registration-form" class="registration-form" novalidate>
+        <div class="form-field">
+          <label for="first-name">First Name (required)</label>
+          <input
+            type="text"
+            id="first-name"
+            name="firstName"
+            autocomplete="given-name"
+            minlength="3"
+            aria-describedby="first-name-error"
+            required
+          >
+          <p class="field-error" id="first-name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="last-name">Last Name (required)</label>
+          <input
+            type="text"
+            id="last-name"
+            name="lastName"
+            autocomplete="family-name"
+            minlength="3"
+            aria-describedby="last-name-error"
+            required
+          >
+          <p class="field-error" id="last-name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="mobile">Mobile Number (required)</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            autocomplete="tel-national"
+            inputmode="numeric"
+            pattern="[0-9]{8}"
+            maxlength="8"
+            aria-describedby="mobile-hint mobile-error"
+            required
+          >
+          <p class="field-hint" id="mobile-hint">
+            Enter exactly 8 digits without the country code.
+          </p>
+          <p class="field-error" id="mobile-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address (required)</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            aria-describedby="email-error"
+            required
+          >
+          <p class="field-error" id="email-error"></p>
+        </div>
+
+        <button type="submit" class="action-button primary-button">
+          Register
+        </button>
+
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="home.html" class="site-logo">Tech<span>Ease</span></a>
+      <p class="footer-description">
+        Helping older adults build confidence with technology.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Learn</h3>
+      <a href="subtopic1.html">Smartphone Basics</a>
+      <a href="subtopic2.html">Online Services</a>
+      <a href="subtopic3.html">Stay Safe Online</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Our Project</h3>
+      <a href="planning-design.html">Planning &amp; Design</a>
+      <a href="reflection-ai-report.html">Reflection &amp; AI</a>
+      <a href="overview.html">Overview</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Get Started</h3>
+      <a href="#learning">Choose a topic</a>
+      <a href="#register">Registration demo</a>
+    </div>
+  </div>
+
+  <div class="footer-line"></div>
+  <div class="container footer-bottom">
+    <p>© 2026 TechEase. Student educational project.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

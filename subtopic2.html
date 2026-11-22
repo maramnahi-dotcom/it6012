@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Services | TechEase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="person3.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="techease-header">
+    <div class="te-wrap">
+      <div class="te-head-top"
+     style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:10px 0;">
+
+  <a href="home.html" class="te-logo">
+    Tech<span>Ease</span>
+  </a>
+
+  <div class="text-controls"
+       style="display:flex; align-items:center; gap:8px; margin-left:auto; color:#FFFFFF; font-size:0.9rem;">
+
+    <span>Text size:</span>
+
+    <button
+      type="button"
+      id="decrease-text"
+      aria-label="Decrease text size"
+      style="appearance:none; min-width:44px; min-height:44px; margin:0; padding:6px 10px; border:1px solid #8BD4F4; border-radius:8px; background:transparent; color:#FFFFFF; font:inherit; font-weight:700; opacity:1; box-shadow:none; cursor:pointer;"
+    >A−</button>
+
+    <button
+      type="button"
+      id="increase-text"
+      aria-label="Increase text size"
+      style="appearance:none; min-width:44px; min-height:44px; margin:0; padding:6px 10px; border:1px solid #8BD4F4; border-radius:8px; background:transparent; color:#FFFFFF; font:inherit; font-weight:700; opacity:1; box-shadow:none; cursor:pointer;"
+    >A+</button>
+
+  </div>
+</div>
+
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="subtopic1.html">Smartphone Basics</a></li>
+          <li><a href="subtopic2.html" class="active" aria-current="page">Online Services</a></li>
+          <li><a href="subtopic3.html">Stay Safe Online</a></li>
+          <li><a href="planning-design.html">Planning &amp; Design</a></li>
+          <li><a href="reflection-ai-report.html">Reflection &amp; AI</a></li>
+          <li><a href="overview.html">Overview</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="small-heading">TECHNOLOGY MADE EASY</p>
+        <h1>Online Services</h1>
+        <p class="hero-text">Learn how to do everyday tasks online, one simple step at a time.</p>
+        <a class="btn btn-primary" href="#practice">Try the practice activity</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span>📱</span><span>📅</span><span>✓</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="learn" style="background: #D5EFFB;">
+  <div class="container">
+      <h2 class="section-title">What can you do online?</h2>
+      <p class="section-intro">Many services can be used from home using a phone or computer.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="lesson-card h-100"><div class="card-icon">🏦</div><h3>Online Banking</h3><p>Check your balance, transfer money and pay bills through your bank's official app or website.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="lesson-card h-100"><div class="card-icon">🛒</div><h3>Online Shopping</h3><p>Choose products, check the price and delivery details, then pay using a trusted store.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="lesson-card h-100"><div class="card-icon">🏛️</div><h3>Government Services</h3><p>Find information and apply for services using official government websites.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="lesson-card h-100"><div class="card-icon">📅</div><h3>Appointments</h3><p>Choose a service, date and time without needing to visit the office first.</p></div></div>
+      </div>
+    </section>
+
+<section class="section soft-section" id="practice" style="background: #FFFFFF;">
+  <div class="container">
+    <h2 class="section-title">Let's practice booking an appointment</h2>
+        <p class="section-intro">Follow the instructions and try the example on the right. This is not a real booking.</p>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <div class="guide-card">
+              <span class="step-label">GUIDED ACTIVITY</span>
+              <h3 id="bookingGuideTitle">Step 1: Choose a service</h3>
+              <p id="bookingGuideText">Select the type of appointment you want to practice booking.</p>
+              <ol class="guide-list">
+                <li>Choose a service</li><li>Enter a practice name</li><li>Pick a date and time</li><li>Review and confirm</li>
+              </ol>
+              <div class="note">💡 <strong>Remember:</strong> Use a made-up name. This activity does not send or save any information.</div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="phone-shell">
+              <div class="phone-top"></div>
+              <div class="phone-screen">
+                <div class="screen-heading"><span>📅</span><div><strong>Appointment Service</strong><small>Practice booking</small></div></div>
+                <p id="bookingStepText" class="step-label">STEP 1 OF 4</p>
+                <div class="progress" aria-label="Booking progress"><div class="progress-bar" id="bookingProgress" style="width:25%"></div></div>
+                <form id="bookingForm" novalidate>
+                  <div class="booking-step" data-step="1">
+                    <h3>Choose a service</h3>
+                    <label for="service" class="form-label">Service type</label>
+                    <select id="service" class="form-select focus-field"><option value="">Choose a service</option><option value="Healthcare Appointment">Healthcare Appointment</option><option value="Government Service">Government Service</option><option value="Bank Appointment">Bank Appointment</option></select>
+                  </div>
+                  <div class="booking-step d-none" data-step="2">
+                    <h3>Your details</h3>
+                    <label for="customerName" class="form-label">Practice name</label>
+                    <input id="customerName" class="form-control focus-field" placeholder="Example: Sara" maxlength="50">
+                  </div>
+                  <div class="booking-step d-none" data-step="3">
+                    <h3>Choose a date and time</h3>
+                    <label for="bookingDate" class="form-label">Date</label><input id="bookingDate" type="date" class="form-control focus-field mb-3">
+                    <label for="bookingTime" class="form-label">Time</label><select id="bookingTime" class="form-select"><option value="">Choose a time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>2:00 PM</option></select>
+                  </div>
+                  <div class="booking-step d-none" data-step="4"><h3>Review your details</h3><div id="bookingSummary" class="details-box"></div></div>
+                  <p id="bookingError" class="error-text d-none" role="alert"></p>
+                  <div class="form-buttons"><button id="backBtn" type="button" class="btn btn-outline-primary d-none">Back</button><button id="nextBtn" type="button" class="btn btn-primary ms-auto">Next</button></div>
+                </form>
+                <div id="bookingSuccess" class="d-none success-box" role="status"><div class="success-icon">✓</div><h3>Well done!</h3><p>You completed the practice booking.</p><div id="confirmedDetails" class="details-box"></div><p class="small">No real appointment was made.</p><button id="restartBooking" class="btn btn-primary" type="button">Try again</button></div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: #D5EFFB;">
+      <div class="container">
+        <h2 class="section-title">Helpful reminders</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="tip-card"><h3>🔎 Check the website</h3><p>Visit the official website directly rather than following an unexpected message link.</p></div></div>
+        <div class="col-md-4"><div class="tip-card"><h3>🔐 Keep details private</h3><p>Never share your password or one-time verification code with another person.</p></div></div>
+        <div class="col-md-4"><div class="tip-card"><h3>✅ Review before submitting</h3><p>Check your date, time and other details carefully before confirming.</p></div></div>
+      </div>
+      <div class="text-center mt-5"><a class="btn btn-primary" href="subtopic3.html">Next: Stay Safe Online</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 TechEase. Student educational project.</p>
+      <p>Helping older adults build confidence with technology.</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

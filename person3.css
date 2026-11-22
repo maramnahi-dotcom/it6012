@@ -1,0 +1,589 @@
+/* TechEase Project Colors */
+:root {
+    --light-blue: #D5EFFB;
+    --sky-blue: #8BD4F4;
+    --bright-blue: #0BA9ED;
+    --deep-teal: #086080;
+    --dark-navy: #03313D;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: var(--dark-navy);
+    font-family: Arial, sans-serif;
+    line-height: 1.65;
+}
+
+h1, h2, h3 {
+    color: var(--deep-teal);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+.site-nav {
+    background-color: var(--deep-teal);
+    padding: 14px 0;
+}
+
+.site-nav .navbar-brand {
+    color: var(--light-blue);
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+
+.site-nav .nav-link {
+    color: var(--light-blue);
+    font-weight: bold;
+    padding-left: 18px !important;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+    color: var(--sky-blue);
+}
+
+.navbar-toggler {
+    background-color: var(--light-blue);
+    border-color: var(--sky-blue);
+}
+
+/* Introduction Section */
+.hero {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hero-inner > div:first-child {
+    max-width: 620px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin: 20px 0 26px;
+}
+
+.small-heading,
+.step-label {
+    color: var(--deep-teal);
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/* Illustration */
+.hero-art {
+    background-color: var(--light-blue);
+    border: 4px solid var(--bright-blue);
+    border-radius: 34px;
+    padding: 36px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.hero-art span:nth-child(2) {
+    font-size: 2.3rem;
+}
+
+.hero-art span:nth-child(3) {
+    font-size: 1.7rem;
+    color: var(--deep-teal);
+}
+
+/* Main Sections */
+.section {
+    padding-top: 78px;
+    padding-bottom: 78px;
+    background-color: white;
+}
+
+.soft-section {
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 5px;
+    background-color: var(--bright-blue);
+    border-radius: 5px;
+    margin: 15px auto 0;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 42px;
+    font-size: 1.06rem;
+}
+
+/* Cards */
+.lesson-card,
+.tip-card,
+.guide-card,
+.example-card {
+    background-color: var(--light-blue);
+    border: 2px solid var(--sky-blue);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 5px 0 var(--deep-teal);
+}
+
+.soft-section .guide-card,
+.soft-section .example-card {
+    border-color: var(--bright-blue);
+}
+
+.lesson-card h3 {
+    margin-top: 12px;
+}
+
+.lesson-card p,
+.tip-card p,
+.example-card p {
+    margin-bottom: 0;
+}
+
+.card-icon {
+    background-color: var(--sky-blue);
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+/* Instructions */
+.guide-list {
+    padding-left: 22px;
+    margin: 22px 0;
+}
+
+.guide-list li {
+    margin-bottom: 14px;
+}
+
+.note {
+    background-color: var(--sky-blue);
+    padding: 16px;
+    border-left: 5px solid var(--deep-teal);
+    border-radius: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--bright-blue);
+    border: 2px solid var(--bright-blue);
+    color: var(--dark-navy);
+    font-weight: bold;
+    padding: 11px 23px;
+    border-radius: 12px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--deep-teal) !important;
+    border-color: var(--deep-teal) !important;
+    color: var(--light-blue) !important;
+}
+
+.btn-primary:disabled {
+    background-color: var(--sky-blue);
+    border-color: var(--sky-blue);
+    color: var(--deep-teal);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--deep-teal);
+    color: var(--deep-teal);
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 11px 23px;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--deep-teal);
+    border-color: var(--deep-teal);
+    color: var(--light-blue);
+}
+
+/* Phone Simulation */
+.phone-shell {
+    background-color: var(--dark-navy);
+    border: 8px solid var(--dark-navy);
+    border-radius: 38px;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 9px;
+    box-shadow: 0 12px 0 var(--deep-teal);
+}
+
+.phone-top {
+    width: 85px;
+    height: 9px;
+    border-radius: 20px;
+    background-color: var(--sky-blue);
+    margin: 4px auto 13px;
+}
+
+.phone-screen {
+    background-color: var(--light-blue);
+    border-radius: 18px;
+    padding: 24px 20px;
+    min-height: 465px;
+}
+
+.phone-home {
+    width: 70px;
+    height: 7px;
+    background-color: var(--sky-blue);
+    border-radius: 20px;
+    margin: 14px auto 2px;
+}
+
+.screen-heading {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 2px solid var(--sky-blue);
+    padding-bottom: 17px;
+    margin-bottom: 22px;
+}
+
+.screen-heading > span {
+    background-color: var(--sky-blue);
+    border-radius: 12px;
+    font-size: 1.8rem;
+    padding: 7px 10px;
+}
+
+.screen-heading strong {
+    display: block;
+    color: var(--deep-teal);
+}
+
+.screen-heading small {
+    display: block;
+}
+
+/* Progress Bar */
+.progress {
+    height: 9px;
+    background-color: var(--sky-blue);
+    margin-bottom: 25px;
+}
+
+.progress-bar {
+    background-color: var(--bright-blue);
+}
+
+/* Booking Form */
+.booking-step h3,
+.quiz-question {
+    margin-bottom: 22px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--deep-teal);
+    background-color: var(--light-blue);
+    color: var(--dark-navy);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--light-blue);
+    border-color: var(--bright-blue);
+    box-shadow: 0 0 0 4px var(--sky-blue);
+}
+
+.focus-field {
+    outline: 3px solid var(--bright-blue);
+    outline-offset: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.error-text {
+    color: var(--dark-navy);
+    background-color: var(--sky-blue);
+    border-left: 5px solid var(--deep-teal);
+    padding: 10px;
+    margin-top: 16px;
+}
+
+/* Booking Details */
+.details-box {
+    background-color: var(--sky-blue);
+    border-radius: 12px;
+    padding: 18px;
+    overflow-wrap: anywhere;
+}
+
+.details-box p {
+    margin-bottom: 7px;
+}
+
+.success-box {
+    text-align: center;
+}
+
+.success-icon {
+    background-color: var(--bright-blue);
+    color: var(--dark-navy);
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tip-card {
+    height: 100%;
+}
+
+/* Scam Messages */
+.message-bubble {
+    background-color: var(--sky-blue);
+    padding: 20px;
+    border-radius: 18px;
+    margin: 18px 0;
+    border-left: 5px solid var(--bright-blue);
+    font-weight: bold;
+}
+
+/* Quiz */
+.quiz-options {
+    display: grid;
+    gap: 12px;
+}
+
+.quiz-option {
+    width: 100%;
+    text-align: left;
+    background-color: var(--light-blue);
+    border: 2px solid var(--deep-teal);
+    border-radius: 12px;
+    padding: 13px;
+    color: var(--dark-navy);
+}
+
+.quiz-option:hover,
+.quiz-option.selected {
+    background-color: var(--sky-blue);
+    border-color: var(--bright-blue);
+}
+
+.quiz-option:focus-visible {
+    outline: 3px solid var(--bright-blue);
+    outline-offset: 2px;
+}
+
+.quiz-option:disabled {
+    opacity: 1;
+}
+
+/* Quiz Feedback */
+.feedback-box {
+    margin-top: 18px;
+    background-color: var(--sky-blue);
+    padding: 15px;
+    border-left: 5px solid var(--deep-teal);
+    border-radius: 10px;
+}
+
+.answer-review {
+    text-align: left;
+}
+
+.review-item {
+    border-top: 2px solid var(--sky-blue);
+    padding: 13px 0;
+}
+
+.review-item p {
+    margin: 5px 0;
+}
+
+.score-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--deep-teal);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--dark-navy);
+    color: var(--light-blue);
+    padding: 42px 0;
+    text-align: center;
+}
+
+.site-footer strong {
+    font-size: 1.6rem;
+}
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .hero {
+        padding: 48px 0;
+    }
+
+    .hero-inner {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-art {
+        display: none;
+    }
+
+    .section {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .phone-screen {
+        padding: 22px 15px;
+    }
+}
+
+/* ============================================
+   TechEase Header (same as Overview page)
+   Scoped to .techease-header so nothing else changes
+   ============================================ */
+.techease-header {
+    background: var(--deep-teal);
+    border-bottom: 1px solid var(--sky-blue);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.techease-header .te-wrap {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.techease-header .te-head-top {
+    padding-top: 0.6rem;
+}
+
+.techease-header .te-logo {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.techease-header .te-logo span {
+    color: var(--bright-blue);
+}
+
+.techease-header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0.4rem 0 0.75rem;
+}
+
+.techease-header nav li {
+    margin: 0;
+}
+
+.techease-header nav a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    color: var(--light-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.techease-header nav a:hover {
+    background: var(--sky-blue);
+    color: var(--dark-navy);
+}
+
+.techease-header nav a.active {
+    background: var(--bright-blue);
+    color: var(--dark-navy);
+    font-weight: 700;
+}
+
+.techease-header a:focus-visible {
+    outline: 3px solid var(--bright-blue);
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .techease-header nav ul {
+        gap: 0.15rem;
+    }
+
+    .techease-header nav a {
+        padding: 0.45rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}
